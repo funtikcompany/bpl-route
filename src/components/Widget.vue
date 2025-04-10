@@ -4,8 +4,6 @@
         <svg class="trail" width="100%" height="100%">
             <path :d="trailPath" fill="none" stroke="#00ff00" stroke-width="2" />
         </svg>
-        <img src="../assets/123.png
-        " alt="">
         <img
           src="../assets/bpla_icon_no_bg.svg"
           class="plane"
