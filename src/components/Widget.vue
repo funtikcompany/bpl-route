@@ -16,7 +16,7 @@
           <button @click="startFlight" v-if="!isFlying" class="btn">Старт</button>
           <button @click="stopFlight"  v-if="isFlying" class="btn">Стоп</button>
         </div>
-        <span v-for="item in coordinate" :key="item.title" class="coordiante-point" :class="`coordiante-point-${item.position}`">
+        <span v-for="item in coordinate" :key="item.title" class="coordinates-point" :class="`coordinates-point-${item.position}`">
             {{item.title}}
             <sup>{{item.scale}}</sup>
         </span>
@@ -878,38 +878,38 @@
         justify-content: center;
     }
 
-    .coordiante-point {
+    .coordinates-point {
         font-size:28px;
         position:absolute;
         color:#fff
     }
 
-    .coordiante-point-top,.coordiante-point-bottom {
+    .coordinates-point-top,.coordinates-point-bottom {
         left:50%;
         transform: translateX(-50%);
     }
 
-    .coordiante-point-left,.coordiante-point-right{
+    .coordinates-point-left,.coordinates-point-right{
         top:50%;
         transform: translateY(-50%);
         transform: rotate(-90deg);
     }
 
-    .coordiante-point-left{
+    .coordinates-point-left{
         left:20px;
         
     }
 
-   .coordiante-point-right{
+   .coordinates-point-right{
         right:20px;
 
     }
 
-    .coordiante-point-top {
+    .coordinates-point-top {
         top:20px;
     }
 
-    .coordiante-point-bottom {
+    .coordinates-point-bottom {
         bottom:20px;
     }
 
